@@ -1,0 +1,187 @@
+================================================================================
+FILTERED BUSINESS LOOKUP REPORT - NOT-FOR-PROFIT CORPORATION
+================================================================================
+Generated: 2025-11-09 17:26:13
+Source file: owner_lookups\business_lookup_details_20251106_003018.txt
+Business type filter: Not-for-Profit Corporation
+Total matching businesses: 87
+================================================================================
+
+SUMMARY OF FILTERED BUSINESSES
+--------------------------------------------------------------------------------
+  1. ALMEHDI ALMUNTATHAR UNION
+     Status: Active | Address: London, Ontario, Canada
+  2. APOSTOLIC CHRISTIAN CHURCH (NAZAREAN) RICHMOND HILL
+     Status: Active | Address: Richmond Hill, Ontario, Canada
+  3. AUDUBON COMMUNITY ASSOCIATION
+     Status: Active | Address: KITCHENER, Ontario, Canada
+  4. BENTON STREET BAPTIST CHURCH
+     Status: Active | Address: KITCHENER, Ontario, Canada
+  5. BETHEL CEMETERY ON STIRLING-MARMORA ROAD
+     Status: Active | Address: STIRLING, Ontario, Canada
+  6. BETH JACOB OF KITCHENER
+     Status: Active | Address: Kitchener, Ontario, Canada
+  7. BETHANY EVANGELICAL MISSIONARY CHURCH
+     Status: Active | Address: KITCHENER, Ontario, Canada
+  8. MARTIN LUTHER EVANGELICAL LUTHERAN CHURCH
+     Status: Active | Address: Etobicoke, Ontario, Canada
+  9. BETHEL ROMANIAN BAPTIST CHURCH
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 10. LAKESHORE ST. ANDREW'S PRESBYTERIAN CHURCH
+     Status: Active | Address: Windsor, Ontario, Canada
+ 11. CARMEL INDIAN PENTECOSTAL CHURCH TORONTO
+     Status: Active | Address: SCARBOROUGH, Ontario, Canada
+ 12. CENTRAL ONTARIO MUSICIANS' ASSOCIATION
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 13. CHALON ESTATES INC.
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 14. THE CORPORATION OF THE CITY OF WATERLOO
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 15. THE REORGANIZED CHURCH OF JESUS CHRIST OF LATTER DAY SAINTS
+     Status: Active | Address: GUELPH, Ontario, Canada
+ 16. CONCORDIA CLUB
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 17. ASSOCIATION FRANCO-ONTARIENNE DES CONSEILS SCOLAIRES CATHOLIQUES
+     Status: Active | Address: Toronto, Ontario, Canada
+ 18. LA CENTRALE DE SERVICES ADMINISTRATIFS DES CONSEILS SCOLAIRES DE LANGUE FRANCAISE DE L'ONTARIO
+     Status: Active | Address: OTTAWA, Ontario, Canada
+ 19. COPTIC ORTHODOX PATRIARCHATE SAINT MAURICE COPTIC ORTHODOX CHURCH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 20. COUNTRY HILLS CHURCH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 21. CYPRIOT HOMES ASSOCIATION
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 22. DEER RIDGE GOLF CLUB
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 23. LAKESHORE ST. ANDREW'S PRESBYTERIAN CHURCH
+     Status: Active | Address: Windsor, Ontario, Canada
+ 24. FAITH EVANGELICAL LUTHERAN CHURCH (ST. CATHARINES)
+     Status: Active | Address: St. Catharines, Ontario, Canada
+ 25. FAITH EVANGELICAL MISSIONARY CHURCH, KITCHENER
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 26. RIDEAU HILL CAMP OF THE UNITED CHURCH OF CANADA
+     Status: Active | Address: Kemptville, Ontario, Canada
+ 27. LAO CANADIAN EVANGELICAL MENNONITE CHURCH
+     Status: Active | Address: TORONTO, Ontario, Canada
+ 28. GRAND RIVER CONSERVATION AUTHORITY
+     Status: Active | Address: Cambridge, Ontario, Canada
+ 29. GRAND RIVER HEALTH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 30. GRAND RIVER UNITARIAN CONGREGATION
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 31. GREEK ORTHODOX COMMUNITY OF THE HOLY TRINITY NON-PROFIT HOUSING CORPORATION
+     Status: Active | Address: Thunder Bay, Ontario, Canada
+ 32. HIGHVIEW COMMUNITY CHURCH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 33. HISLACAN HOMES KITCHENER-WATERLOO INC.
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 34. HOLY TRINITY ETHIOPIAN ORTHODOX TEWAHEDO CHURCH CORPORATION
+     Status: Active | Address: Hamilton, Ontario, Canada
+ 35. HOUSE OF FRIENDSHIP
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 36. INDWELL COMMUNITY HOMES
+     Status: Active | Address: Hamilton, Ontario, Canada
+ 37. ISLAMIC HUMANITARIAN SERVICE
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 38. J. STECKLE HERITAGE HOMESTEAD
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 39. KINGDOM COMMUNITY INTERNATIONAL
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 40. KITCHENER HOUSING INC.
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 41. KITCHENER NON-PROFIT PROPERTY MANAGEMENT INC.
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 42. KITCHENER PORTUGUESE CLUB INCORPORATED
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 43. LOGOS ROMANIAN PENTECOSTAL CHURCH OF TORONTO
+     Status: Active | Address: York, Ontario, Canada
+ 44. KITCHENER WATERLOO STARS BASKETBALL CLUB
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 45. KITCHENER-WATERLOO CHRISTIAN FELLOWSHIP
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 46. KW ISLAMIC ASSOCIATION
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 47. LUTHERAN HOMES KITCHENER-WATERLOO
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 48. MEHERET EVANGELICAL CHURCH
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 49. MENNOHOMES INC.
+     Status: Active | Address: Elmira, Ontario, Canada
+ 50. MENNONITE CENTRAL COMMITTEE (ONTARIO)
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 51. MUSLIM COUNCIL OF ONTARIO
+     Status: Active | Address: Mississauga, Ontario, Canada
+ 52. ROCK AND RIVER CONGREGATION
+     Status: Active | Address: MISSISSAUGA, Ontario, Canada
+ 53. PHOMMAVIHARAM BUDDHIST TEMPLE (KITCHENER- WATERLOO)
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 54. CHRISTIAN VOLLEYBALL FELLOWSHIP
+     Status: Active | Address: Scarborough, Ontario, Canada
+ 55. PIONEER SPORTSMEN CLUB
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 56. PORTUGUESE CENTRE OF KITCHENER-WATERLOO
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 57. TREE OF LIFE PRESBYTERIAN CHURCH
+     Status: Active | Address: Thornhill, Ontario, Canada
+ 58. RARE CHARITABLE RESEARCH RESERVE
+     Status: Active | Address: Cambridge, Ontario, Canada
+ 59. RAY OF HOPE INC.
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 60. REGION OF WATERLOO IRISH SOCIETY (ROWIS)
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 61. ROCKWAY MENNONITE CHURCH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 62. ROCKWAY MENNONITE COLLEGIATE INC.
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 63. ROMANIAN CHRISTIAN FELLOWSHIP INC.
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 64. ROMANIAN ORTHODOX PARISH ST. JOHN THE BAPTIST
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 65. SANDHILLS RESIDENTIAL RETIREMENT COMMUNITY INC.
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 66. SLAVONIA-CROATIAN NON-PROFIT HOMES INC.
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 67. ETHIOPIAN ORTHODOX TEWAHEDO CHURCH DEBRE MIHRET ST. MICHAEL PARISH
+     Status: Active | Address: Windsor, Ontario, Canada
+ 68. LAKESHORE ST. ANDREW'S PRESBYTERIAN CHURCH
+     Status: Active | Address: Windsor, Ontario, Canada
+ 69. CHRIST LUTHERAN CHURCH - ST. CATHARINES
+     Status: Active | Address: ST. CATHARINES, Ontario, Canada
+ 70. CHRIST LUTHERAN CHURCH - ST. CATHARINES
+     Status: Active | Address: ST. CATHARINES, Ontario, Canada
+ 71. STANLEY PARK BAPTIST CHURCH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 72. STIRLING AVENUE MENNONITE CHURCH
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 73. THALER RETIREMENT MANOR INC.
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 74. THE SPIRITUAL BAPTIST FAITH APOSTOLIC PROVINCE OF THE DOMINION OF CANADA INC.
+     Status: Active | Address: Toronto, Ontario, Canada
+ 75. TRAVERSE INDEPENDENCE NOT-FOR-PROFIT
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 76. GRACE MENNONITE CHURCH OF ST. CATHARINES
+     Status: Active | Address: ST CATHARINES, Ontario, Canada
+ 77. GRAND RIVER HEALTH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 78. GRAND RIVER HEALTH
+     Status: Active | Address: Kitchener, Ontario, Canada
+ 79. ST. GEORGE UKRAINIAN ORTHODOX CHURCH ST. CATHARINES FOUNDATION
+     Status: Active | Address: St. Catharines, Ontario, Canada
+ 80. TWIN CITIES KIWANIS FAMILY HOUSING FOUNDATION
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 81. OUR LADY OF NINEVEH CHALDEAN CATHOLIC CHURCH
+     Status: Active | Address: North York, Ontario, Canada
+ 82. UNION BUILDING CORPORATION OF CANADA
+     Status: Active | Address: Toronto, Ontario, Canada
+ 83. WATERLOO WAYSIDE COMMUNITY SERVICES CENTRE OF THE UNITED CHURCH OF CANADA
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 84. UNIVERSITY OF WATERLOO STAFF ASSOCIATION
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 85. VERIDEIA CLASSICAL CHRISTIAN ACADEMY
+     Status: Active | Address: KITCHENER, Ontario, Canada
+ 86. WATERLOO REGIONAL HEALTH NETWORK FOUNDATION
+     Status: Active | Address: Waterloo, Ontario, Canada
+ 87. WILFRID LAURIER UNIVERSITY ALUMNI ASSOCIATION
+     Status: Active | Address: Waterloo, Ontario, Canada
+
+================================================================================
