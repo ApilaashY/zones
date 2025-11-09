@@ -1,0 +1,52 @@
+================================================================================
+BUSINESS LOOKUP DETAILS - COMPREHENSIVE REPORT
+================================================================================
+Generated: 2025-11-06 00:26:48
+Total owners to process: 1
+================================================================================
+
+
+================================================================================
+BUSINESS LOOKUP #1: A2 HOLDINGS INC
+================================================================================
+
+SEARCH RESULTS FOR: A2 HOLDINGS INC
+================================================================================
+
+COMPANY DETAILS
+--------------------------------------------------------------------------------
+STATUS: Active
+ADDRESS: Kitchener, Ontario, Canada
+
+================================================================================
+MATCHING DEBUG INFORMATION
+--------------------------------------------------------------------------------
+Original search: 'A2 HOLDINGS INC'
+Original company: 'A2 HOLDINGS INC. (1776439)KITCHENER, ONTARIO, CANADASTATUSACTIVE'
+Normalized search: 'a2 holdings inc'
+Normalized company: 'a2 holdings inc 1776439 kitchener ontario canadastatusactive'
+Search variations: {'inc holdings a2', 'a2 holdings inc', 'a2 h', 'ah'}
+✅ Direct match found with variations: ['a2 holdings inc', 'a2 h']
+--------------------------------------------------------------------------------
+
+================================================================================
+MATCH FOUND: YES
+CONFIDENCE: 95%
+CLOSEST MATCH: A2 HOLDINGS INC. (1776439)Kitchener, Ontario, CanadaStatusActive
+================================================================================
+
+================================================================================
+DETAILED COMPANY INFORMATION (Result #1)
+================================================================================
+
+COMPANY NAME: A2 HOLDINGS INC.
+CORPORATION NUMBER: 1776439
+REGISTRY TYPE: Corporations
+STATUS: Active
+ADDRESS: Kitchener, Ontario, Canada
+INCORPORATION DATE: September 15 2008
+BUSINESS TYPE: Ontario Business Corporation
+
+================================================================================
+
+
