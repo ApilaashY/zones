@@ -1,0 +1,21 @@
+NON-PROFIT CORPORATION SEARCH REPORT
+============================================================
+
+SEARCH: a (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 50.83s
+Saved HTML: result_a_Co-operative_Non-Share_20251127_035818.html
+Results Found: 0
+
+
+============================================================
+
+SEARCH: a (Co-operative with Share)
+----------------------------------------
+Status: ⚠️ Error
+Time: 58.24s
+Error: Page.content: Target page, context or browser has been closed
+
+============================================================
+

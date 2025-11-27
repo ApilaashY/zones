@@ -1,0 +1,483 @@
+NON-PROFIT CORPORATION SEARCH REPORT
+============================================================
+
+SEARCH: a (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.22s
+Saved HTML: result_a_Co-operative_Non-Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: AKWABA CITY CO-OPERATIVE INC. / COOPÉRATIVE AKWABA CITÉ INC. (1001128344)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: January 06, 2025
+Location: Sudbury, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: ADANAC RIDGE CO-OPERATIVE HOMES INC. (1001057582)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: November 04, 2024
+Location: Sudbury, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: AUNTIESTABLISHMENT'S COPRIETORSHIP: A WORKER'S CO-OPERATIVE INC. (1001029639)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: October 08, 2024
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: ANTLER RIVER MEDIA CO-OPERATIVE INC. (1000979180)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 07, 2024
+Location: London, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: ABSOLUTELY GEORGIAN BAY TOURISM CO-OPERATIVE INC. (5046443)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: March 01, 2021
+Location: PARRY SOUND, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: ADVENTURE HALIBURTON GROUP CO-OPERATIVE INC. (1907885)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: September 29, 2017
+Location: HALIBURTON, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: AKAJOU CO-OPERATIVE COOPERATIVE INC. (1907804)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 13, 2015
+Location: OTTAWA, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: ARTS AT THE ALBION CO-OPERATIVE GALLERY INC. (1851985)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 12, 2014
+Location: GRAVENHURST, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: ARON THEATRE CO-OPERATIVE INC. (1613570)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: June 30, 2010
+Location: Campbellford, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: AASHIANA DAY CARE CO-OPERATIVE INC. (1613548)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: November 18, 2009
+Location: AJAX, Ontario, Canada
+Status: Active
+
+
+============================================================
+
+SEARCH: a (Co-operative with Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.21s
+Saved HTML: result_a_Co-operative_with_Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: ATTAWAPISKAT COMMUNITY DEVELOPMENT CO-OPERATIVE LTD. / COOPERATIVE DE DEVELOPPEMENT COMMUNAUTAIRE D'ATTAWAPISKAT LTEE (1000563213)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: June 08, 2023
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: APPROVAL CO-OPERATIVE INC. (5046795)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: March 23, 2021
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: ARISE ARCHITECTS CO-OPERATIVE CORPORATION (5020126)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: August 27, 2019
+Location: KITCHENER, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: ALAU PROXIMITE COOPERATIVE INC. (1907852)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 13, 2016
+Location: OTTAWA, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: AIRLINK LIMO SERVICE CO-OPERATIVE LIMITED (1851919)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: April 22, 2013
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: APPLEHILL RENEWABLE ENERGY CO-OPERATIVE INC. (1851903)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: January 02, 2013
+Location: SOUTH STORMONT, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: AVONMORE RENEWABLE ENERGY CO-OPERATIVE INC. (1851904)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: January 02, 2013
+Location: SAINT ANDREWS WEST, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: AMHERST ISLAND RENEWABLE ENERGY CO-OPERATIVE CORPORATION (1851906)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: December 27, 2012
+Location: KINGSTON, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: ARRAN WIND ENERGY CO-OPERATIVE INC. (1851882)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: October 26, 2012
+Location: KINCARDINE, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: AMBER ENERGY CO-OPERATIVE INC. (1851850)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: July 18, 2012
+Location: ST. THOMAS, Ontario, Canada
+Status: Active
+
+
+============================================================
+
+SEARCH: b (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.19s
+Saved HTML: result_b_Co-operative_Non-Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: BRAMBLEWOOD CO-OPERATIVE HOMES INC. (1001338234)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 21, 2025
+Location: Hamilton, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: BRUCE GREY OUTDOOR SCHOOL CO-OPERATIVE INC. (5049375)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: June 07, 2021
+Location: TOWNSHIP OF GEORGIAN BLUFFS, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: BEAUTY CONNECT CO-OPERATIVE INC. (5027298)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: February 28, 2020
+Location: PICKERING, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: BARRETT'S TEAS AND SUPPORTS WORKERS CO-OPERATIVE LIMITED (1907891)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: October 15, 2018
+Location: HAMILTON, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: BERRY RD FOOD CO-OPERATIVE INC. (1907835)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 30, 2016
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: BRIGHT STARTS CO-OPERATIVE EARLY LEARNING CENTRE INC. (1851961)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: January 01, 2014
+Location: Waterloo, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: BROCK RENEWABLE ENERGY CO-OPERATIVE INC. (1851951)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: November 14, 2013
+Location: SUNDERLAND, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: BENEPLAN EMPLOYEE BENEFITS CO-OPERATIVE INC. (1851923)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: April 29, 2013
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: BIG ON GREEN WORKER CO-OPERATIVE INC. (1851921)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: April 22, 2013
+Location: BRAMPTON, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: BIRCHMOUNT CO-OPERATIVE DEVELOPMENT CORPORATION (1851805)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: July 04, 2011
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+
+============================================================
+
+SEARCH: b (Co-operative with Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.21s
+Saved HTML: result_b_Co-operative_with_Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: BLACK WOMEN PROFESSIONAL CO-OPERATIVE INC. (1000884657)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: April 16, 2024
+Location: Richmond Hill, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: BRUCE FEEDER FINANCE CO-OPERATIVE INC. (1000694888)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 01, 2023
+Location: Tara, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: BACK TO BASICS CO-OPERATIVE LIMITED (5036255)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 04, 2020
+Location: Oakville, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: BEGIN AGAIN GROUP CO-OPERATIVE INC. (5016755)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: October 01, 2019
+Location: Kingston, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: BEETBOX CO-OPERATIVE FARM LTD. (1907880)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: April 28, 2017
+Location: Nepean, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: BRICKTOWN CO-OPERATIVE DEVELOPMENT CORPORATION (1907828)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: April 05, 2016
+Location: Clearview, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: BIG COUNTRY MMA AND FITNESS CO-OPERATIVE INC. (1851980)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: June 10, 2014
+Location: LINDSAY, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: BLUESKY RENEWABLE ENERGY CO-OPERATIVE OF INC. (1851858)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 04, 2012
+Location: NIAGARA-ON-THE-LAKE, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: BEACH COMMUNITY ENERGY CO-OPERATIVE INC. (1851839)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: April 26, 2012
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: BEERDRAGON CO-OPERATIVE INC. (1613530)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: February 13, 2009
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+
+============================================================
+
+SEARCH: c (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.16s
+Saved HTML: result_c_Co-operative_Non-Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: AKWABA CITY CO-OPERATIVE INC. / COOPÉRATIVE AKWABA CITÉ INC. (1001128344)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: January 06, 2025
+Location: Sudbury, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: CENTRE WELLINGTON CHILD CARE CO-OPERATIVE INC. (1000934136)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: June 06, 2024
+Location: Fergus, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: CORKTOWN CO-OPERATIVE HOMES INC. (1000758710)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: January 01, 2024
+Location: Hamilton, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: CREATIVE HUB CO-OPERATIVE INC. (1000744045)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: December 15, 2023
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: CO-OPERATIVE CARE ALLIANCE INC. (1000517246)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: April 18, 2023
+Location: Peterborough, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: CUBEFRUIT GAMES WORKER CO-OPERATIVE INC. (1000393986)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: December 07, 2022
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: CO-UNITY EDUCATION CO-OPERATIVE INC. (1000089573)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: January 13, 2022
+Location: Guelph, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: COOPERATIVE DE TRAVAILLEURS 3 MAMANS YOGINIS CORP. (5046787)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: July 15, 2021
+Location: MISSISSAUGA, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: COMMUNITY WEALTH CO-OPERATIVE CORPORATION (5011213)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: May 08, 2019
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: COOPERATIVE TAAB COMMUNITY CARE/TAAB POUR TOUS INC. (1907868)
+Business Type: Co-operative Non-Share
+Amalgamation/Inc. Date: August 20, 2018
+Location: TORONTO, Ontario, Canada
+Status: Active
+
+
+============================================================
+
+SEARCH: c (Co-operative with Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.15s
+Saved HTML: result_c_Co-operative_with_Share_20251127_041127.html
+Results Found: 10
+
+--- Result #1 ---
+Business Name: CONTRACTORS CO-OPERATIVE OF CANADA INC. (1001385889)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 24, 2025
+Location: Chatham, Ontario, Canada
+Status: Active
+
+--- Result #2 ---
+Business Name: CONSTELLATION THEATRE CO-OPERATIVE INC. (1001327169)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: August 06, 2025
+Location: North Bay, Ontario, Canada
+Status: Active
+
+--- Result #3 ---
+Business Name: CUBACANA VACATION CO-OPERATIVE INC. (1000817111)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: February 08, 2024
+Location: Mississauga, Ontario, Canada
+Status: Active
+
+--- Result #4 ---
+Business Name: COPERTO CO-OPERATIVE LTD. (1000772255)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: January 08, 2024
+Location: Mississauga, Ontario, Canada
+Status: Active
+
+--- Result #5 ---
+Business Name: ATTAWAPISKAT COMMUNITY DEVELOPMENT CO-OPERATIVE LTD. / COOPERATIVE DE DEVELOPPEMENT COMMUNAUTAIRE D'ATTAWAPISKAT LTEE (1000563213)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: June 08, 2023
+Location: Toronto, Ontario, Canada
+Status: Active
+
+--- Result #6 ---
+Business Name: CAMER GTA CO-OPERATIVE LIMITED (1000548165)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: May 12, 2023
+Location: Beamsville, Ontario, Canada
+Status: Active
+
+--- Result #7 ---
+Business Name: CANADA CO-OPERATIVE CHAMPIONSHIP RUGBY LEAGUE LTD. (5044360)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: February 04, 2021
+Location: BURLINGTON, Ontario, Canada
+Status: Active
+
+--- Result #8 ---
+Business Name: CO-OPERATIVE CLEANERS OF ONTARIO INC. (5023695)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: September 09, 2019
+Location: Brampton, Ontario, Canada
+Status: Active
+
+--- Result #9 ---
+Business Name: COOPERATIVE AGRICOLE SAVEURS D'ICI ET D'AILLEURS CORP. (5003243)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: June 21, 2019
+Location: OTTAWA, Ontario, Canada
+Status: Active
+
+--- Result #10 ---
+Business Name: COOPERATIVE COMMUNAUTAIRE MULTISERVICES L'UNION FAIT LA FORCE INCORPOREE (1907863)
+Business Type: Co-operative with Share
+Amalgamation/Inc. Date: June 04, 2018
+Location: VILLE D'OTTAWA, Ontario, Canada
+Status: Active
+
+
+============================================================
+

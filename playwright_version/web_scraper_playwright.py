@@ -1,17 +1,22 @@
 """
 Web Scraper using Playwright for business registry searches.
 This module provides a Playwright-based alternative to Selenium for web automation.
+OPTIMIZED VERSION with concurrent capabilities and performance improvements.
 """
 
 import asyncio
 import os
 import time
 from playwright.async_api import async_playwright, Page, Browser, BrowserContext
-from typing import Optional
+from typing import Optional, List, Dict
+import concurrent.futures
+from dataclasses import dataclass
 
 # Configuration - Set these to control file output behavior
 SAVE_DEBUG_FILES = True  # Set to False to disable saving HTML and debug files
 OUTPUT_FOLDER = 'business_lookup_output'  # Folder name for organizing output files
+MAX_CONCURRENT_SEARCHES = 3  # Number of concurrent searches (be respectful to server)
+OPTIMIZED_TIMEOUTS = True  # Use shorter, smarter timeouts
 
 def ensure_output_folder():
     """Create the output folder if it doesn't exist."""
@@ -25,6 +30,16 @@ def get_output_path(filename: str) -> str:
         ensure_output_folder()
         return os.path.join(OUTPUT_FOLDER, filename)
     return filename
+
+@dataclass
+class SearchResult:
+    """Data class for search results with performance metrics."""
+    business_name: str
+    html_content: str
+    success: bool
+    error_message: str = ""
+    search_time: float = 0.0
+    response_size: int = 0
 
 
 class PlaywrightScraper:
@@ -54,6 +69,10 @@ class PlaywrightScraper:
         """Async context manager exit."""
         await self.close()
     
+    async def initialize(self):
+        """Initialize the scraper (alias for start method)."""
+        await self.start()
+    
     async def start(self):
         """Start the browser and create a new page."""
         self.playwright = await async_playwright().start()
@@ -81,9 +100,13 @@ class PlaywrightScraper:
         # Create new page
         self.page = await self.context.new_page()
         
-        # Set reasonable timeouts
-        self.page.set_default_timeout(30000)  # 30 seconds
-        self.page.set_default_navigation_timeout(60000)  # 60 seconds
+        # Set optimized timeouts
+        if OPTIMIZED_TIMEOUTS:
+            self.page.set_default_timeout(15000)  # 15 seconds - faster failure detection
+            self.page.set_default_navigation_timeout(30000)  # 30 seconds
+        else:
+            self.page.set_default_timeout(30000)  # 30 seconds
+            self.page.set_default_navigation_timeout(60000)  # 60 seconds
         
         return self
     
@@ -210,6 +233,147 @@ class PlaywrightScraper:
             print(f"Screenshot saved as {filename}")
         except Exception as e:
             print(f"Error taking screenshot: {e}")
+    
+    async def search_business_optimized(self, business_name: str) -> SearchResult:
+        """
+        Optimized business search with performance improvements.
+        
+        Args:
+            business_name: Name of the business to search for
+            
+        Returns:
+            SearchResult with performance metrics
+        """
+        start_time = time.time()
+        
+        try:
+            print(f"Optimized search for: {business_name}")
+            
+            # Navigate with faster load strategy
+            search_url = "https://www.appmybizaccount.gov.on.ca/onbis/master/viewInstance/view.pub?id=3abd3bce3cc0ad2a5f4d3e3394f70a887b5d3629f9b7ec72&_timestamp=576646948208925"
+            
+            await self.page.goto(search_url, wait_until='domcontentloaded')  # Faster than networkidle
+            
+            # Quick cookie handling with timeout
+            try:
+                await self.page.click("button:has-text('Accept all')", timeout=2000)
+                await asyncio.sleep(0.3)  # Reduced wait time
+            except:
+                pass  # Cookie banner might not exist
+            
+            # Fill search box with error handling
+            await self.page.wait_for_selector("#QueryString", timeout=10000)
+            await self.page.fill("#QueryString", business_name)
+            
+            # Try different search button selectors (same as original)
+            search_button_selectors = [
+                "button[type='submit']",
+                "input[type='submit']",
+                "button:has-text('Search')",
+                "button:has-text('SEARCH')",
+                "input[value='Search']",
+                "input[value='SEARCH']",
+                "#nodeW20"  # Original ID as fallback
+            ]
+            
+            search_clicked = False
+            for selector in search_button_selectors:
+                try:
+                    button = self.page.locator(selector)
+                    if await button.count() > 0:
+                        await button.click(timeout=5000)
+                        print(f"Search button clicked using {selector}")
+                        search_clicked = True
+                        break
+                except Exception as e:
+                    continue
+            
+            if not search_clicked:
+                raise Exception("Could not find or click the search button")
+            
+            # Wait for page to load after clicking
+            await self.page.wait_for_load_state('domcontentloaded')
+            
+            # Smart wait for results instead of fixed delay
+            await self._smart_wait_for_results()
+            
+            # Get page content
+            html_content = await self.page.content()
+            search_time = time.time() - start_time
+            
+            return SearchResult(
+                business_name=business_name,
+                html_content=html_content,
+                success=True,
+                search_time=search_time,
+                response_size=len(html_content)
+            )
+            
+        except Exception as e:
+            search_time = time.time() - start_time
+            print(f"Error in optimized search for {business_name}: {e}")
+            return SearchResult(
+                business_name=business_name,
+                html_content="",
+                success=False,
+                error_message=str(e),
+                search_time=search_time
+            )
+    
+    async def _smart_wait_for_results(self, max_wait: float = 6.0):
+        """
+        Smart waiting that checks for actual content instead of fixed delays.
+        Significantly faster than the original 10-second wait.
+        """
+        start_time = time.time()
+        
+        while time.time() - start_time < max_wait:
+            try:
+                # Check for results
+                results = await self.page.query_selector_all("div.registerItemSearch-results-page-line-ItemBox")
+                if results:
+                    return  # Results found
+                
+                # Check for no results message
+                no_results = await self.page.query_selector("text=/No results found|No matches found/i")
+                if no_results:
+                    return  # No results confirmed
+                
+                # If we've waited minimum time and no loading indicators, assume done
+                if time.time() - start_time > 2.0:
+                    loading_indicators = await self.page.query_selector("text=/Loading|Searching|Please wait/i")
+                    if not loading_indicators:
+                        return
+                
+                await asyncio.sleep(0.3)  # Check every 300ms
+                
+            except Exception:
+                # If checking fails, use minimum wait time
+                if time.time() - start_time > 2.0:
+                    return
+                await asyncio.sleep(0.3)
+    
+    async def search_multiple_concurrent(self, business_names: List[str]) -> List[SearchResult]:
+        """
+        Search multiple businesses using the same browser instance.
+        More efficient than creating new instances for each search.
+        
+        Args:
+            business_names: List of business names to search
+            
+        Returns:
+            List of SearchResult objects
+        """
+        results = []
+        
+        for business_name in business_names:
+            result = await self.search_business_optimized(business_name)
+            results.append(result)
+            
+            # Brief pause between searches to be respectful
+            await asyncio.sleep(0.5)
+        
+        return results
 
 
 # Synchronous wrapper for compatibility with existing code
@@ -430,8 +594,183 @@ def search_ontario_business_playwright(business_name: str) -> str:
     return loop.run_until_complete(search_ontario_business_async(business_name))
 
 
+class ConcurrentBusinessProcessor:
+    """
+    Processes multiple businesses concurrently using browser context pools.
+    Optimized for high-throughput business lookups with server-friendly throttling.
+    """
+    
+    def __init__(self, max_concurrent: int = MAX_CONCURRENT_SEARCHES):
+        self.max_concurrent = max_concurrent
+        self.browser = None
+        self.semaphore = asyncio.Semaphore(max_concurrent)
+    
+    async def __aenter__(self):
+        playwright = await async_playwright().start()
+        self.browser = await playwright.chromium.launch(headless=True)
+        return self
+    
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        if self.browser:
+            await self.browser.close()
+    
+    async def _process_single_business(self, business_name: str) -> SearchResult:
+        """Process a single business with context management."""
+        async with self.semaphore:
+            try:
+                # Create isolated context for this search
+                context = await self.browser.new_context(
+                    viewport={'width': 1280, 'height': 720},
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                )
+                page = await context.new_page()
+                
+                # Use optimized search method
+                scraper = PlaywrightScraper()
+                scraper.browser = self.browser  # Reuse browser
+                scraper.context = context
+                scraper.page = page
+                
+                result = await scraper.search_business_optimized(business_name)
+                
+                await context.close()
+                return result
+                
+            except Exception as e:
+                print(f"Error processing {business_name}: {e}")
+                return SearchResult(
+                    business_name=business_name,
+                    success=False,
+                    error_message=str(e),
+                    html_content=""
+                )
+    
+    async def process_businesses(self, business_names: List[str], batch_size: int = 10) -> List[SearchResult]:
+        """
+        Process businesses in batches with concurrent execution.
+        
+        Args:
+            business_names: List of business names to process
+            batch_size: Number of businesses to process concurrently
+            
+        Returns:
+            List of SearchResult objects
+        """
+        all_results = []
+        
+        # Process in batches to prevent overwhelming the server
+        for i in range(0, len(business_names), batch_size):
+            batch = business_names[i:i + batch_size]
+            print(f"Processing batch {i//batch_size + 1}: {len(batch)} businesses")
+            
+            # Process batch concurrently
+            tasks = [self._process_single_business(name) for name in batch]
+            batch_results = await asyncio.gather(*tasks, return_exceptions=True)
+            
+            # Handle any exceptions
+            for j, result in enumerate(batch_results):
+                if isinstance(result, Exception):
+                    error_result = SearchResult(
+                        business_name=batch[j],
+                        success=False,
+                        error_message=str(result),
+                        html_content=""
+                    )
+                    all_results.append(error_result)
+                else:
+                    all_results.append(result)
+            
+            # Pause between batches to be server-friendly
+            if i + batch_size < len(business_names):
+                print(f"Completed batch {i//batch_size + 1}. Pausing before next batch...")
+                await asyncio.sleep(2)  # 2-second pause between batches
+        
+        return all_results
+
+async def search_businesses_concurrent(business_names: List[str]) -> List[SearchResult]:
+    """
+    Convenience function for concurrent business searches.
+    
+    Args:
+        business_names: List of business names to search
+        
+    Returns:
+        List of SearchResult objects with performance metrics
+    """
+    async with ConcurrentBusinessProcessor() as processor:
+        return await processor.process_businesses(business_names)
+
+# Performance testing and comparison functions
+async def compare_performance(business_names: List[str], sample_size: int = 10):
+    """
+    Compare performance between optimized and original methods.
+    
+    Args:
+        business_names: List of business names to test
+        sample_size: Number of businesses to test (default: 10)
+    """
+    test_names = business_names[:sample_size]
+    
+    print(f"\n🔄 Performance Comparison Test")
+    print(f"Testing {len(test_names)} businesses")
+    print(f"Original vs Optimized vs Concurrent methods")
+    print("=" * 60)
+    
+    # Test concurrent method
+    print(f"\n⚡ Testing Concurrent Method...")
+    concurrent_start = time.time()
+    concurrent_results = await search_businesses_concurrent(test_names)
+    concurrent_time = time.time() - concurrent_start
+    concurrent_success = sum(1 for r in concurrent_results if r.success)
+    
+    # Test optimized sequential method
+    print(f"\n🚀 Testing Optimized Sequential Method...")
+    sequential_start = time.time()
+    async with PlaywrightScraper() as scraper:
+        await scraper.initialize()
+        sequential_results = await scraper.search_multiple_concurrent(test_names)
+    sequential_time = time.time() - sequential_start
+    sequential_success = sum(1 for r in sequential_results if r.success)
+    
+    # Display results
+    print(f"\n📊 Performance Results:")
+    print(f"Concurrent Method:   {concurrent_time:.2f}s ({concurrent_success}/{len(test_names)} successful)")
+    print(f"Sequential Method:   {sequential_time:.2f}s ({sequential_success}/{len(test_names)} successful)")
+    
+    if sequential_time > 0:
+        improvement = ((sequential_time - concurrent_time) / sequential_time) * 100
+        print(f"Performance Gain:    {improvement:.1f}% faster with concurrent")
+    
+    return {
+        'concurrent': {'time': concurrent_time, 'success_count': concurrent_success},
+        'sequential': {'time': sequential_time, 'success_count': sequential_success}
+    }
+
 if __name__ == "__main__":
-    # Test the scraper
-    test_business = "MTD Products Limited"
-    result = search_ontario_business_playwright(test_business)
-    print(f"Search completed. Result length: {len(result)} characters")
+    # Test the scraper with performance comparison
+    test_businesses = [
+        "MTD Products Limited",
+        "Canadian Tire Corporation",
+        "Shoppers Drug Mart Inc.",
+        "Loblaws Inc.",
+        "Hudson's Bay Company"
+    ]
+    
+    print("🚀 Enhanced Playwright Scraper with Multithreading")
+    print("=" * 60)
+    
+    # Run performance comparison
+    async def main():
+        await compare_performance(test_businesses, sample_size=3)
+        
+        # Test single optimized search
+        print(f"\n🔍 Testing single optimized search...")
+        async with PlaywrightScraper() as scraper:
+            await scraper.initialize()
+            result = await scraper.search_business_optimized("MTD Products Limited")
+            print(f"Search completed: {result.success}")
+            print(f"Time taken: {result.search_time:.2f}s")
+            print(f"Content size: {result.response_size:,} characters")
+    
+    # Run the main function
+    asyncio.run(main())

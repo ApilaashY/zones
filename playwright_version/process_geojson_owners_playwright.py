@@ -34,8 +34,8 @@ def is_private_owner(owner_name: str) -> bool:
     owner_upper = owner_name.upper().strip()
     
     # Skip empty or very short names
-    if len(owner_upper) < 3:
-        return False
+    # if len(owner_upper) < 3:
+    #     return False
     
     # Check for "LTD" or "LIMITED" in the name (case-insensitive)
     if 'LTD' in owner_upper or 'LIMITED' in owner_upper:
@@ -53,7 +53,10 @@ def is_private_owner(owner_name: str) -> bool:
     # Check if any word in the name matches a corporate indicator
     if any(word in corporate_indicators for word in words):
         return False
-    
+    ### write to a debug file the excluded names for review
+    with open(get_output_path('excluded_names_debug.txt'), 'a', encoding='utf-8') as debug_file:
+        debug_file.write(f"Excluded custom: {owner_name}\n")
+
     # Check for numbers in the name (often indicates a business)
     if any(word.isdigit() for word in words):
         # But allow if it's a year (e.g., "John Smith 2020 Trust")

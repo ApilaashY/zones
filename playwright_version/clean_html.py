@@ -350,3 +350,55 @@ if __name__ == "__main__":
                 print("\nFirst result details:")
                 print(f.read().split('RESULT #2')[0].strip())
     print(f"Cleaned HTML saved to: {os.path.abspath(output_file)}")
+
+def clean_html_content(html_content: str) -> str:
+    """
+    Clean HTML content directly and return formatted text instead of saving to file.
+    
+    Args:
+        html_content: The HTML content as a string
+        
+    Returns:
+        str: Cleaned and formatted text content
+    """
+    # Parse the HTML content
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # Find all result items (each company's block)
+    result_blocks = soup.find_all('div', class_=re.compile('registerItemSearch-results-page-line'))
+    
+    # Build output string
+    output_lines = []
+    output_lines.append("Search Results")
+    output_lines.append("=" * 80)
+    output_lines.append("")
+    
+    valid_results = 0
+    
+    for i, block in enumerate(result_blocks, 1):
+        info = extract_company_info(block)
+        
+        # Skip if we don't have enough information
+        if len(info) < 2:  # At least company name and one other field
+            continue
+            
+        valid_results += 1
+        
+        output_lines.append(f"RESULT #{valid_results}")
+        output_lines.append("-" * 80)
+        
+        # Write company info in a clean format
+        for key, value in info.items():
+            if value and str(value).strip() and str(value).strip() != 'N/A':
+                output_lines.append(f"{key}: {value}")
+        
+        output_lines.append("")
+        output_lines.append("-" * 80)
+        output_lines.append("")
+    
+    # If no valid results found, include a note
+    if valid_results == 0:
+        output_lines.append("No valid company results found in the HTML content.")
+        output_lines.append("")
+    
+    return '\n'.join(output_lines)

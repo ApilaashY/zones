@@ -1,0 +1,43 @@
+NON-PROFIT CORPORATION SEARCH REPORT
+============================================================
+
+SEARCH: a (Not-for-Profit Corporation)
+----------------------------------------
+Status: ✅ Found
+Time: 37.17s
+Saved HTML: result_a_Not-for-Profit_Corporation_20251127_040602.html
+Results Found: 0
+
+
+============================================================
+
+SEARCH: a (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.17s
+Saved HTML: result_a_Co-operative_Non-Share_20251127_040602.html
+Results Found: 0
+
+
+============================================================
+
+SEARCH: b (Not-for-Profit Corporation)
+----------------------------------------
+Status: ✅ Found
+Time: 37.18s
+Saved HTML: result_b_Not-for-Profit_Corporation_20251127_040602.html
+Results Found: 0
+
+
+============================================================
+
+SEARCH: b (Co-operative Non-Share)
+----------------------------------------
+Status: ✅ Found
+Time: 37.21s
+Saved HTML: result_b_Co-operative_Non-Share_20251127_040602.html
+Results Found: 0
+
+
+============================================================
+
