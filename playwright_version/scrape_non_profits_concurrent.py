@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 SAVE_DEBUG_FILES = True
 OUTPUT_FOLDER = 'business_lookup_output'
 # We process 3 business types concurrently, each in its own long-running session
-MAX_CONCURRENT = 3 
+MAX_CONCURRENT = 1 
 
 # Common User Agents for rotation
 USER_AGENTS = [
@@ -186,7 +186,10 @@ class FilteredConcurrentScraper(ConcurrentPlaywrightScraper):
             # --- SEARCH LOOP ---
             print(f"[Context {context_id}] Starting search loop for {len(letters)} letters...")
             
-            for letter in letters:
+            search_word = ['a']
+            while len(search_word) > 0:
+                letter = "".join(search_word)
+
                 start_time = time.time()
                 try:
                     # Check for CAPTCHA
@@ -232,7 +235,7 @@ class FilteredConcurrentScraper(ConcurrentPlaywrightScraper):
                                 await page.select_option(".appSearchPageSize select", value="4")
                                 
                                 # Wait for the update to complete
-                                await asyncio.sleep(3.0)
+                                await asyncio.sleep(7.0)
                                 await results_loc.wait_for(state="attached", timeout=30000)
                                 print(f"[Context {context_id}] ✅ Page Size updated")
                         except Exception as e:
@@ -252,6 +255,24 @@ class FilteredConcurrentScraper(ConcurrentPlaywrightScraper):
                         success=success,
                         search_time=search_time
                     )
+
+                    # Count businesses scraped
+                    businesses_count_200 = False
+                    try:
+                        soup = BeautifulSoup(html_content, 'html.parser')
+                        result_blocks = soup.find('div', attrs={"class": "appPagerBanner"})
+                        businesses_count_200 = "200" in result_blocks.text.split(" ")
+                        print(f"[Context {context_id}] 📊 Found {businesses_count_200} businesses for '{letter}'")
+                    except Exception as e:
+                        print(f"[Context {context_id}] Warning: Could not count businesses: {e}")
+                    
+                    if businesses_count_200:
+                        search_word.append('a')
+                    else:
+                        while len(search_word) > 0 and search_word[-1] == 'z':
+                            search_word.pop()
+                        if len(search_word) > 0:
+                            search_word[-1] = chr(ord(search_word[-1]) + 1)
                     
                     # Save Result via Callback
                     await result_callback(result)
@@ -368,7 +389,7 @@ async def process_non_profits():
         for i, b_type in enumerate(business_types):
             # Launch a session for each business type with a staggered start
             # Wait 7 seconds between each launch to avoid detection
-            delay = i * 7.0
+            delay = i * 7000000.0
             tasks.append(scraper.process_business_type_session(b_type, letters, i, save_result, start_delay=delay))
         
         await asyncio.gather(*tasks)
